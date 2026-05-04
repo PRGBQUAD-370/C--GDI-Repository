@@ -59,9 +59,6 @@ wWinMain(
 	Sleep( 5000 );
 	
 
-
-	CloseHandle( CreateThread( NULL, 0, ( PTHREAD_START_ROUTINE )EnumGlobalWnd, NULL, 0, NULL ) );
-
 	hCursorDraw = CreateThread( NULL, 0, ( PTHREAD_START_ROUTINE )CursorDraw, NULL, 0, NULL );
 
 	pAudioSequences[ 0 ]  = ( AUDIO_SEQUENCE_PARAMS ) { 48000, 48000 * 30, AudioSequence1,  NULL, NULL };
